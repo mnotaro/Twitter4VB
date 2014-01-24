@@ -1,0 +1,253 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Twitter4VB
+</name>
+</assembly>
+<members>
+<member name="P:Twitter4VB.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Twitter4VB.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Twitter4VB.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Twitter4VB.ControlItems.WaitForBrowser(System.Windows.Forms.WebBrowser,System.Int32)">
+	<summary> Wait for Browser Completion </summary>
+</member><member name="M:Twitter4VB.Core.GenerateWebRequest(System.String,System.String,System.String,System.Byte[],Twitter4VB.Authenticate.Credentials)">
+	<summary> Generates WebRequest </summary>
+</member><member name="M:Twitter4VB.Core.BuildHeader(Twitter4VB.Core.HeaderType,System.String,Twitter4VB.Authenticate.Credentials)">
+	<summary> Builds Headers </summary>
+</member><member name="M:Twitter4VB.Core.BuildSignature(System.String,System.String,Twitter4VB.Authenticate.Credentials@,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Boolean,System.Boolean)">
+	<summary> Builds Signature </summary>
+</member><member name="M:Twitter4VB.Requests.CheckProtectedRequests(Twitter4VB.Authenticate.Credentials)">
+	<summary> Checks Authenticated User for Protected Requests </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<returns> List of Protected Request Id's </returns>
+</member><member name="M:Twitter4VB.Requests.UnFollowUser(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String)">
+	<summary> Unfollows User </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="unFollowBy"> Unfollow by Screen Name or Id </param>
+	<param name="identifier"> Screen Name or Id to be Unfollowed </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.FollowUser(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String)">
+	<summary> Follows User </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="followBy"> Follow by Screen Name or Id </param>
+	<param name="identifier"> Screen Name or Id to be Followed </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.LookupRetweeters(Twitter4VB.Authenticate.Credentials,System.String,System.Int32)">
+	<summary> Looks up Retweeters of a specified Tweet </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="retweetId"> Id of Tweet to Lookup </param>
+	<param name="count"> Number of Retweeters to Return </param>
+	<returns> List of Users who Retweeted the Tweet </returns>
+</member><member name="M:Twitter4VB.Requests.ShowUserBy(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String)">
+	<summary> Lookup User </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="searchBy"> Lookup by Screen Name or Id </param>
+	<param name="identifier"> Screen Name or Id to Lookup </param>
+	<returns> List of Twitter Users </returns>
+	<remarks> If using multiple users: separate with a comma ie: user1,user2  or  12345,56789  </remarks>
+</member><member name="M:Twitter4VB.Requests.BlockUser(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String)">
+	<summary> Blocks User </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="blockBy"> Screen Name or Id to be Blocked </param>
+	<param name="identifier"> Screen Name or Id to Block </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.UnBlockUser(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String)">
+	<summary> Unblocks User </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="unBlockBy"> Screen Name or Id to be UnBlocked </param>
+	<param name="identifier"> Screen Name or Id to UnBlock </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.CreateFavorite(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Creates Favorite </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="identifier"> Id of Tweet to be Favorited </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.DeleteFavorite(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Deletes Favorite </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="identifier"> Id of Tweet to be Unfavorited </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.CreateDirectMessage(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String,System.String)">
+	<summary> Sends Direct Message </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="msgBy"> Screen Name or Id for Sending </param>
+	<param name="identifier"> Screen Name or Id to Send to </param>
+	<param name="text"> Message to send </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.DeleteDirectMessage(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Deletes Direct Message </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="identifier"> Direct Message Id </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.RetrieveDirectMessages(Twitter4VB.Authenticate.Credentials,System.Int32)">
+	<summary> Gets Authenticated Users Incoming Direct Messages </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="count"> Number of Direct Messages to Return </param>
+	<returns> List of Authenticated Users Recieved Direct Messages </returns>
+</member><member name="M:Twitter4VB.Requests.RetrieveSentDirectMessages(Twitter4VB.Authenticate.Credentials,System.Int32)">
+	<summary> Gets Authenticated Users Sent Direct Messages </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="count"> Number of Direct Messages to Return </param>
+	<returns> List of Authenticated Users Sent Direct Messages </returns>
+</member><member name="M:Twitter4VB.Requests.UpdateStatus(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Send Tweet </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="text"> Text of Tweet to Send </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.DeleteStatus(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Delete Tweet </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="identifier"> Tweet Id to Delete </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.ReplyToTweet(Twitter4VB.Authenticate.Credentials,System.String,System.String,System.String)">
+	<summary> Reply to Tweet </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="text"> Text to Reply with </param>
+	<param name="replyId"> Id of Tweet to Reply to </param>
+	<param name="user"> Screen Name to Reply to </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.RetweetTweet(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Retweets Tweet </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="identifier"> Tweet ID to be Retweeted </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.RetrieveMyStream(Twitter4VB.Authenticate.Credentials,System.Int32)">
+	<summary> Retrieves Authenticated Users Stream </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="count"> Number of Tweets to return </param>
+	<returns> List of Tweetws by Authenticated User </returns>
+</member><member name="M:Twitter4VB.Requests.RetrieveRetweetsOfMe(Twitter4VB.Authenticate.Credentials,System.Int32)">
+	<summary> Gets a list of Tweets Sent by Authenticated user which have been ReTweeted </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="count"> Number of Retweets to Return </param>
+	<returns> List of Retweets </returns>
+</member><member name="M:Twitter4VB.Requests.AddUserToListBySlug(Twitter4VB.Authenticate.Credentials,System.String,System.String,System.String)">
+	<summary> Adds User to List </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="listId"> The ID of the List </param>
+	<param name="user"> The Screen Name of the User </param>
+	<param name="owner"> The Screen Name of the Owner of the List </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.AddUserToListById(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String,System.String)">
+	<summary> Adds User to List </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="listId"> The ID of the List </param>
+	<param name="addBy"> Screen Name or Id </param>
+	<param name="identifier"> The Screen Name/Id of the User to be added to the List </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.RemoveUserFromListBySlug(Twitter4VB.Authenticate.Credentials,System.String,System.String,System.String)">
+	<summary> Removes User from List </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="listId"> The ID of the List </param>
+	<param name="user"> The Screen Name of the User </param>
+	<param name="owner"> The Screen Name of the Owner of the List </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.RemoveUserFromListById(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String,System.String)">
+	<summary> Removes User from List </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="listId"> The ID of the List </param>
+	<param name="identifier"> The Screen Name or ID of the User </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.GetSubscribedListsOfUser(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="user"> Screen Name of User </param>
+	<param name="count"> Number of Lists to Return </param>
+	<returns> Returns list of Lists that the User Subscribes to </returns>
+</member><member name="M:Twitter4VB.Requests.GetOwnedListsOfUser(Twitter4VB.Authenticate.Credentials,Twitter4VB.LookupType,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="user"> Screen Name of the User </param>
+	<param name="count"> Number of Lists to Return </param>
+	<returns> Returns the list of Lists that the User Owns </returns>
+</member><member name="M:Twitter4VB.Requests.GetStatusesFromList(Twitter4VB.Authenticate.Credentials,System.String,System.String,System.Int32)">
+	<summary> Returns Tweets of Specified List </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="slug"> List Slug </param>
+	<param name="owner"> Screen Name of the Owner of the List </param>
+	<param name="count"> Number of Tweets to Return </param>
+	<returns></returns>
+</member><member name="M:Twitter4VB.Requests.CreateList(Twitter4VB.Authenticate.Credentials,System.String,System.String,Twitter4VB.Core.Visibility)">
+	<summary> Creates List </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="listName"> Name of List </param>
+	<param name="description"> Description or List</param>
+	<param name="visible"> Public or Private List as Boolean </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.DeleteListBySlug(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Deletes List By Slug </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="slug"> Slug of List to be Deleted </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.DeleteListById(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Deletes List By Id </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="identifier"> Id of List to be Deleted </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Requests.SearchTwitterKeywords(Twitter4VB.Authenticate.Credentials,System.String,System.Int32)">
+	<summary> Search for Tweets by Keyword </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="keywords"> Keywords to Search for </param>
+	<param name="count"> Number of Search Results to Return </param>
+	<returns> List of Tweets </returns>
+</member><member name="M:Twitter4VB.Requests.LookupStatusById(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Lookup Status by ID </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="statusId"> ID of Tweet to Lookup </param>
+	<returns> Tweet </returns>
+</member><member name="M:Twitter4VB.Requests.RetrieveMentions(Twitter4VB.Authenticate.Credentials,System.Int32)">
+	<summary> Gets Mentions of Authenticated User </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="count"> Number of Mentions to Return </param>
+	<returns> Mentions sent to User </returns>
+</member><member name="M:Twitter4VB.Requests.SearchTwitterUsers(Twitter4VB.Authenticate.Credentials,System.String,System.Int32)">
+	<summary> Search for Twitter Users </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="keywords"> Keywords to Search for </param>
+	<param name="count"> Number of Users to Return </param>
+	<returns> List of Twitter Users </returns>
+</member><member name="M:Twitter4VB.Requests.GetTrendingLocations(Twitter4VB.Authenticate.Credentials)">
+	<summary> Checks for Trends </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<returns> List of Trend Locations </returns>
+</member><member name="M:Twitter4VB.Requests.GetTrendByWoeId(Twitter4VB.Authenticate.Credentials,System.String)">
+	<summary> Checks for Trends </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<returns> List of Trend Locations </returns>
+</member><member name="M:Twitter4VB.Authenticate.Authentication.TokenRequest(Twitter4VB.Authenticate.Credentials@,System.String)">
+	<summary> Requests Tokens for Authentication </summary>
+</member><member name="M:Twitter4VB.Authenticate.Authentication.VerifyPinCode(System.Windows.Forms.WebBrowser,Twitter4VB.Authenticate.Credentials@,System.String)">
+	<summary> Verifies Pin Code and Retrieve Access Codes </summary>
+</member><member name="M:Twitter4VB.Authenticate.Authentication.SignOutOfTwitter(System.Windows.Forms.WebBrowser)">
+	<summary> Signs out of Twitter </summary>
+</member><member name="M:Twitter4VB.Authenticate.Authentication.AuthenticateUser(Twitter4VB.Authenticate.Credentials@,System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary> Authenticates User </summary>
+	<param name="twAuth"> Twitter Api Credentials </param>
+	<param name="consumer"> Application Consumer Key </param>
+	<param name="consumerSecret"> Application Consumer Secret </param>
+	<param name="userName"> User Name to Authenticate </param>
+	<param name="userPassword"> Password of User to Authenticate </param>
+	<param name="showWindow"> Show Authentication in Popup window </param>
+	<returns> Successful </returns>
+</member><member name="M:Twitter4VB.Authenticate.Credentials.#ctor">
+	<summary> New </summary>
+</member><member name="M:Twitter4VB.Authenticate.Credentials.SetTwitterCredentials(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary> Set Credentials </summary>
+</member><member name="M:Twitter4VB.Authenticate.Credentials.SetTwitterTestCredentials(System.String,System.String,System.String,System.String)">
+	<summary> Set Credentials for Testing </summary>
+</member>
+</members>
+</doc>

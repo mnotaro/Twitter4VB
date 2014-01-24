@@ -1,0 +1,10 @@
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\bin\Debug\Twitter4VB.dll
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\bin\Debug\Twitter4VB.pdb
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\bin\Debug\Twitter4VB.xml
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\obj\Debug\Twitter4VB.AuthenticationWindow.resources
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\obj\Debug\Twitter4VB.Resources.resources
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\obj\Debug\Twitter4VB.vbproj.GenerateResource.Cache
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\obj\Debug\Twitter4VB.dll
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\obj\Debug\Twitter4VB.xml
+C:\Users\Blizzard3\Documents\All Development\VB.Net Development\Libraries\Twitter4VB\Twitter4VB\Twitter4VB\obj\Debug\Twitter4VB.pdb
